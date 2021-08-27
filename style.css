@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'BM';
+    src: url('./font/BMJUA_ttf.ttf');
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0px;
+    height: 100%;
+    background-color: cornsilk;
+    font-family: 'BM';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: coral;
+    border-radius: 10px;
+    /* margin: auto; */
+    padding: 10px;
+    top: 50%;
+    width: 400px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+.list_box {
+    margin: 10px auto 10px;
+    color: cornsilk;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+.list_box::-webkit-scrollbar {
+    display: none;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+label {
+    width: 230px;
+}
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    outline: none !important;
+    border: solid cornsilk;
+    border-radius: 2px;
+    background-color: coral;
+}
+
+input[type='checkbox']::before {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: scale(0) translate(-50%, -50%);
+    line-height: 1;
+}
+
+input[type='checkbox']:hover {
+    background-color: white;
+}
+
+input[type='checkbox']:checked {
+    background-color: coral;
+    border-color: cornsilk;
+    color: white;
+}
+
+input[type='checkbox']:checked::before {
+    border-radius: 2px;
+    transform: scale(1) translate(-50%, -50%);
+}
+#add_form {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.add_btn:hover {
+    background-color: white;
+    border-radius: 5px;
+    border: solid cornsilk;
+    color: coral;
+}
+.add_btn {
+    background-color: coral;
+    border: solid cornsilk;
+    border-radius: 5px;
+    color: cornsilk;
+    cursor: pointer;
+}
+.add_txt {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid cornsilk;
+    background-color: cornsilk;
+    color: coral;
+}
+.add_txt:hover {
+    background-color: white;
+    border: solid cornsilk;
+    border-radius: 5px;
+}
+i {
+    color: cornsilk;
+    cursor: pointer;
+}
+input::placeholder {
+    color: coral;
+}
+input {
+    font-family: 'BM';
+    display: inline-block;
+}
