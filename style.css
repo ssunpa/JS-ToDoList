@@ -29,6 +29,7 @@ h1 {
     height: 480px;
     display: flex;
     flex-direction: column;
+    box-shadow: 8px 8px 20px grey;
 }
 .list_box {
     margin: 10px auto 10px;
@@ -124,4 +125,13 @@ input::placeholder {
 input {
     font-family: 'BM';
     display: inline-block;
+}
+
+@media screen and (max-width: 460px) {
+    body {
+        background-color: coral;
+    }
+    .container {
+        box-shadow: none;
+    }
 }
