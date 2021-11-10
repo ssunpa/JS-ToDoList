@@ -1,6 +1,6 @@
 const listBox = document.querySelector('.list_box');
 const textBox = document.querySelector('.add_txt');
-const addBox = document.querySelector('#add_form');
+const addBox = document.querySelector('.add_form');
 
 addBox.addEventListener('submit', (event) => {
     event.preventDefault();
